@@ -2,6 +2,15 @@ import { css } from '@styled-system/css'
 
 export default function Home() {
   return (
-    <main className={css({ textStyle: '22' })}>well we have to start it</main>
+    <main
+      className={css({
+        display: 'flex',
+        flexDir: 'column',
+        justifyContent: 'space-between'
+      })}
+    >
+      <span>well we have to start it</span>
+      <span>well we have to start it</span>
+    </main>
   )
 }
