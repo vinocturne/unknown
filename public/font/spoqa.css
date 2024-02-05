@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 700;
+  src: local('Spoqa Han Sans Neo Bold'),
+  url('/font/spoqa/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+}
+
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 500;
+  src: local('Spoqa Han Sans Neo Medium'),
+  url('/font/spoqa/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 400;
+  src: local('Spoqa Han Sans Neo Regular'),
+  url('/font/spoqa/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 300;
+  src: local('Spoqa Han Sans Neo Light'),
+  url('/font/spoqa/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 100;
+  src: local('Spoqa Han Sans Neo Thin'),
+  url('/font/spoqa/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+}
