@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@/components/Button/Button'
+import { Button } from '@/components/Button'
 import { CheckBox } from '@/components/CheckBox'
 import { TextField } from '@/components/Input'
 import { css } from '@styled-system/css'
