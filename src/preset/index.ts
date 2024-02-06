@@ -48,7 +48,7 @@ export const pandaPreset = definePreset({
           secondary: {
             DEFAULT: { value: '#ffab5f' },
             bg: { value: 'rgba(255, 217, 194, 0.5)' },
-            500: { value: '#ffab5f' }
+            500: { value: '#d08c4f' }
           },
           error: {
             DEFAULT: { value: '#F21414' },

@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from '@/components/Button/Button'
 import { CheckBox } from '@/components/CheckBox'
 import { TextField } from '@/components/Input'
 import { css } from '@styled-system/css'
@@ -22,6 +23,7 @@ export default function Home() {
       >
         <TextField />
         <CheckBox label={'아아아'} />
+        <Button>버튼</Button>
       </div>
     </main>
   )
