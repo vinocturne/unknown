@@ -1,3 +1,4 @@
+import { TextField } from '@/components/Input'
 import { css } from '@styled-system/css'
 
 export default function Home() {
@@ -11,6 +12,13 @@ export default function Home() {
     >
       <span>well we have to start it</span>
       <span>well we have to start it</span>
+      <div
+        className={css({
+          width: '300px'
+        })}
+      >
+        <TextField />
+      </div>
     </main>
   )
 }

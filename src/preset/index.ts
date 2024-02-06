@@ -32,23 +32,23 @@ export const pandaPreset = definePreset({
             950: { value: '#2B2E35' }
           },
           primary: {
-            DEFAULT: { value: '#0DC6B6' },
-            50: { value: '#E3F8F6' },
-            100: { value: '#CDEEEA' },
-            200: { value: '#A9E7E2' },
-            300: { value: '#78E1D8' },
-            350: { value: '#3AD8CB' },
-            400: { value: '#0DC6B6' },
-            450: { value: '#10B8AA' },
-            500: { value: '#1DAA9B' },
-            600: { value: '#0A9080' },
-            700: { value: '#037A6D' },
-            800: { value: '#016257' }
+            DEFAULT: { value: '#5d80e2' },
+            50: { value: '#e8edfb' },
+            100: { value: '#d1dbf7' },
+            200: { value: '#bac8f3' },
+            300: { value: '#5d80e2' },
+            350: { value: '#2f5bda' },
+            400: { value: '#1849d6' },
+            450: { value: '#1642C1' },
+            500: { value: '#0E2C80' },
+            600: { value: '#0A1D56' },
+            700: { value: '#071640' },
+            800: { value: '#050F2B' }
           },
           secondary: {
-            DEFAULT: { value: '#FF701B' },
+            DEFAULT: { value: '#ffab5f' },
             bg: { value: 'rgba(255, 217, 194, 0.5)' },
-            500: { value: '#FF701B' }
+            500: { value: '#ffab5f' }
           },
           error: {
             DEFAULT: { value: '#F21414' },
