@@ -8,7 +8,7 @@ export const tabsStyle = sva({
     },
     list: {
       display: 'flex',
-      gap: '{spacing.10}',
+      gap: '{spacing.14}',
       textStyle: '22',
       fontWeight: '{fontWeights.700}'
     },

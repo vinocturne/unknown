@@ -105,7 +105,7 @@ export const pandaPreset = definePreset({
           ...components
         },
         fonts: {
-          body: { value: 'Pretendard, SpoqaHanSansNeo' }
+          body: { value: '"Pretendar Variable", SpoqaHanSansNeo' }
         },
         fontSizes: {
           10: { value: '10px' },

@@ -19,6 +19,12 @@ export default function RootLayout({
           rel="stylesheet preload"
           as="style"
           crossOrigin=""
+          href="/font/pretendard.css"
+        />
+        <link
+          rel="stylesheet preload"
+          as="style"
+          crossOrigin=""
           href="/font/spoqa.css"
         />
       </head>

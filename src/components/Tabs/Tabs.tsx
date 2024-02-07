@@ -1,14 +1,19 @@
+'use client'
+
 import { TabList, TabTrigger, TabsRoot } from '@ark-ui/react'
 import { useState } from 'react'
 import { tabsStyle } from './Tabs.style'
 import { motion } from 'framer-motion'
+import { cx } from '@styled-system/css'
 
 interface TabsProps {
   tabList: { label: string; value: string }[]
+  defaultValue?: string
+  cn?: { root?: string; list?: string; trigger?: string }
 }
 
-export const Tabs = ({ tabList }: TabsProps) => {
-  const [value, setValue] = useState<string | null>('abc')
+export const Tabs = ({ tabList, defaultValue, cn }: TabsProps) => {
+  const [value, setValue] = useState<string | null>(defaultValue ?? '')
 
   const style = tabsStyle()
 
@@ -16,13 +21,13 @@ export const Tabs = ({ tabList }: TabsProps) => {
     <TabsRoot
       value={value}
       onValueChange={e => setValue(e.value)}
-      className={style.root}
+      className={cx(style.root, cn?.root)}
     >
-      <TabList className={style.list}>
+      <TabList className={cx(style.list, cn?.list)}>
         {tabList.map((tab, index) => (
           <TabTrigger
             key={index}
-            className={style.trigger}
+            className={cx(style.trigger, cn?.trigger)}
             value={tab.value}
             data-selected={value === tab.value}
           >

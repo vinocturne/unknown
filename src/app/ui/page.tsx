@@ -7,13 +7,12 @@ import { RadioGroup } from '@/components/RadioGroup'
 import { Tabs } from '@/components/Tabs'
 import { css } from '@styled-system/css'
 
-export default function Home() {
+export default function UITestPage() {
   return (
     <main
       className={css({
         display: 'flex',
         flexDir: 'column',
-        // justifyContent: 'space-between',
         height: '100dvh'
       })}
     >

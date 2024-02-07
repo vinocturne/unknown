@@ -5,7 +5,7 @@ import { pandaPreset } from '@preset/index'
 const globalCss = defineGlobalStyles({
   'html,body': {
     fontFamily:
-      '"Spoqa Han Sans Neo", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif',
+      '"Pretendard Variable", "Spoqa Han Sans Neo", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif',
     letterSpacing: '-0.3px',
     WebkitTapHighlightColor: 'transparent'
   }
