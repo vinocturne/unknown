@@ -16,6 +16,7 @@ export const avatarStyle = sva({
     isCircle: {
       true: {
         root: {
+          border: '2px solid {colors.gray.700}',
           borderRadius: '100%',
           overflow: 'hidden',
         },

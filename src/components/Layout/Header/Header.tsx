@@ -31,8 +31,8 @@ export default function Header() {
           defaultValue={''}
           isHeader
         />
-        <div className={css({ position: 'absolute', top: -5, right: 0 })}>
-          <Avatar isCircle />
+        <div className={css({ position: 'absolute', top: -7, right: 0 })}>
+          <Avatar width={35} height={35} isCircle />
         </div>
       </div>
     </div>

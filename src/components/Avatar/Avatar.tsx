@@ -12,7 +12,13 @@ export default function Avatar({ src, height, width, isCircle = false }: AvatarP
   const style = avatarStyle({ isCircle });
   return (
     <div className={style.root}>
-      <Image className={style.image} src={'https://picsum.photos/50/50'} alt={'avatar'} width={35} height={35} />
+      <Image
+        className={style.image}
+        src={src ?? 'https://picsum.photos/50/50'}
+        alt={'avatar'}
+        width={width}
+        height={height}
+      />
     </div>
   );
 }
