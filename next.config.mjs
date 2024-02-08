@@ -2,22 +2,20 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      // {
-      //     protocol: 'https',
-      //     hostname: ''
-      // }
-    ]
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+      },
+    ],
   },
   webpack(config) {
-    const fileLoaderRule = config.module.rules.find(rule =>
-      rule.test?.test?.('.svg')
-    )
+    const fileLoaderRule = config.module.rules.find(rule => rule.test?.test?.('.svg'));
 
     config.module.rules.push(
       {
         ...fileLoaderRule,
         test: /\.svg$/i,
-        resourceQuery: /url/ // *.svg?url
+        resourceQuery: /url/, // *.svg?url
       },
       {
         test: /\.svg$/i,
@@ -28,18 +26,18 @@ const nextConfig = {
             loader: '@svgr/webpack',
             options: {
               svgoConfig: {
-                plugins: []
-              }
-            }
-          }
-        ]
+                plugins: [],
+              },
+            },
+          },
+        ],
       }
-    )
+    );
 
-    fileLoaderRule.exclude = /\.svg$/i
+    fileLoaderRule.exclude = /\.svg$/i;
 
-    return config
-  }
-}
+    return config;
+  },
+};
 
-export default nextConfig
+export default nextConfig;

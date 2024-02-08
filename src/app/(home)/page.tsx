@@ -1,5 +1,5 @@
-'use client'
-import { css } from '@styled-system/css'
+'use client';
+import { css } from '@styled-system/css';
 
 export default function Home() {
   return (
@@ -7,10 +7,9 @@ export default function Home() {
       className={css({
         display: 'flex',
         flexDir: 'column',
-        height: '100dvh'
       })}
     >
       asdfsad
     </main>
-  )
+  );
 }
