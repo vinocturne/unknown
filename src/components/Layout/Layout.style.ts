@@ -13,7 +13,7 @@ export const layoutStyle = sva({
       //   display: 'flex',
       //   flexDir: 'column',
       position: 'relative',
-      height: '100%',
+      height: 'calc(100dvh - 53px)',
       maxWidth: '700px',
       margin: '0 auto',
     },

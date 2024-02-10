@@ -9,6 +9,8 @@ interface ChipProps {
 export default function Chip({ isClickable = false, data, onClick }: ChipProps) {
   const style = chipStyle({ isClickable });
 
+  const onClickButton = () => {};
+
   if (isClickable) {
     return (
       <button className={style.root} onClick={onClick}>
