@@ -1,6 +1,7 @@
 'use client';
 import { css } from '@styled-system/css';
-import MainList from './components/MainList/mainList';
+import MainList from './components/MainList/MainList';
+import Carousel from './components/Carousel/Carousel';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       })}
     >
       <MainList />
+      <Carousel />
     </main>
   );
 }

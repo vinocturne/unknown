@@ -13,7 +13,7 @@ export const mainListStyle = sva({
     container: {
       border: '1px solid {colors.gray.100}',
       color: 'gray.950',
-      padding: '{spacing.4} {spacing.8}',
+      padding: '{spacing.8} {spacing.8}',
       borderRadius: 'md',
     },
     list: {

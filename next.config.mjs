@@ -6,6 +6,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'picsum.photos',
       },
+      {
+        protocol: 'https',
+        hostname: 'i.namu.wiki',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img4.daumcdn.net',
+      },
     ],
   },
   webpack(config) {
