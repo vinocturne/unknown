@@ -1,39 +1,42 @@
-import { useCallback, useEffect, useState } from 'react';
-import { carouselStyle } from './Carousel.style';
-import useEmblaCarousel from 'embla-carousel-react';
-import { EmblaCarouselType } from 'embla-carousel';
-import Image from 'next/image';
+import { useCallback, useEffect, useState } from 'react'
+import { carouselStyle } from './Carousel.style'
+import useEmblaCarousel from 'embla-carousel-react'
+import { EmblaCarouselType } from 'embla-carousel'
+import Image from 'next/image'
 
 export default function Carousel() {
-  const style = carouselStyle();
+  const style = carouselStyle()
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: 'start',
-  });
+    align: 'start'
+  })
 
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+  const [selectedIndex, setSelectedIndex] = useState(0)
+  const [scrollSnaps, setScrollSnaps] = useState<number[]>([])
 
   const onInit = useCallback((emblaApi: EmblaCarouselType) => {
-    setScrollSnaps(emblaApi.scrollSnapList());
-  }, []);
+    setScrollSnaps(emblaApi.scrollSnapList())
+  }, [])
 
   const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, []);
+    setSelectedIndex(emblaApi.selectedScrollSnap())
+  }, [])
 
   useEffect(() => {
-    if (!emblaApi) return;
+    if (!emblaApi) return
 
-    onInit(emblaApi);
-    onSelect(emblaApi);
-    emblaApi.on('reInit', onInit);
-    emblaApi.on('reInit', onSelect);
-    emblaApi.on('select', onSelect);
-  }, [emblaApi, onInit, onSelect]);
+    onInit(emblaApi)
+    onSelect(emblaApi)
+    emblaApi.on('reInit', onInit)
+    emblaApi.on('reInit', onSelect)
+    emblaApi.on('select', onSelect)
+  }, [emblaApi, onInit, onSelect])
   return (
-    <>
-      <span className={style.label}>최근 게임 랭킹</span>
-      <div ref={emblaRef} className={style.container}>
+    <section className={style.root}>
+      <span className={style.label}>최근 게임 순위</span>
+      <div
+        ref={emblaRef}
+        className={style.container}
+      >
         <div className={style.bannerList}>
           <div className={style.item}>
             <Image
@@ -45,6 +48,13 @@ export default function Carousel() {
               alt={'image'}
               className={style.image}
             />
+            <div className={style.bottomInfo}>
+              <span className={style.rank}>1</span>
+              <div className={style.info}>
+                <span className={style.gameName}>Palworld</span>
+                <span className={style.published}>2024.01.19</span>
+              </div>
+            </div>
           </div>
           <div className={style.item}>
             <Image
@@ -56,6 +66,13 @@ export default function Carousel() {
               alt={'image'}
               className={style.image}
             />
+            <div className={style.bottomInfo}>
+              <span className={style.rank}>2</span>
+              <div className={style.info}>
+                <span className={style.gameName}>Yakuza 8</span>
+                <span className={style.published}>2024.01.26</span>
+              </div>
+            </div>
           </div>
           <div className={style.item}>
             <Image
@@ -67,9 +84,16 @@ export default function Carousel() {
               alt={'image'}
               className={style.image}
             />
+            <div className={style.bottomInfo}>
+              <span className={style.rank}>3</span>
+              <div className={style.info}>
+                <span className={style.gameName}>Tekken 8</span>
+                <span className={style.published}>2024.01.26</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </>
-  );
+    </section>
+  )
 }
