@@ -51,7 +51,8 @@ export const carouselStyle = sva({
       height: '100%',
       width: '100%',
       objectFit: 'cover',
-      borderRadius: 'md'
+      borderRadius: 'md',
+      border: '2px solid {colors.primary.800}'
     },
     bottomInfo: {
       position: 'absolute',
@@ -62,8 +63,8 @@ export const carouselStyle = sva({
       gap: '{spacing.8}'
     },
     rank: {
-      fontSize: '72px',
-      lineHeight: '60px',
+      fontSize: '125px',
+      lineHeight: '100px',
       textShadow: '3px 3px 3px {colors.gray.500}',
       fontWeight: '{fontWeights.700}',
       color: 'white'
