@@ -14,7 +14,7 @@ export const layoutStyle = sva({
       //   flexDir: 'column',
       position: 'relative',
       height: 'calc(100dvh - 53px)',
-      maxWidth: '700px',
+      maxWidth: '800px',
       margin: '0 auto',
     },
   },
